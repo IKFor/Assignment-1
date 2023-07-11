@@ -15,22 +15,11 @@ body{
     background-color: white;
 }
 
-.end-date-container{
-    display: flex;
-    align-items: center;
-}
-
-.date-input{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .button{
     margin: 10px 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 530px) {
     .container{
         min-width: 470px;
         max-width: 550px;
@@ -48,9 +37,28 @@ body{
     .previous-data{
         margin: 0 5px;
     }
+
+    .date-input{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .property {
+        display: inline;
+    }
+
+    .end-date-container{
+        display: flex;
+        align-items: center;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 530px) {
+    body {
+        display: block;
+    }
+
     .container{
         max-width: auto;
     }
@@ -66,5 +74,17 @@ body{
 
     .previous-data{
         margin: 10px;
+    }
+
+    .date-presets {
+        display: flex;
+    }
+
+    .end-date-container {
+        margin-bottom: 20px;
+    }
+
+    .preset {
+        margin: 15px 30px 20px 0 ;
     }
 }
