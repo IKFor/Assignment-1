@@ -151,11 +151,11 @@ function getWeekendDays(startDate, endDate){
     let result = 0;
     startDate = new Date(Date.parse(startDate)).getDay();
     endDate = new Date(Date.parse(endDate)).getDay();
+
     if (days === 0) {
         console.log("days === 0");
         return 0;
-    }
-    else if (days < 7) {
+    } else if (days < 7) {
         if (startDate < endDate) {
             if (startDate === 0) {
                 return 1;
@@ -164,14 +164,15 @@ function getWeekendDays(startDate, endDate){
             }
         } 
     }
-    if (startDate === 0) {
-        result += 1;
-    }
+
+    if (startDate === 0) result += 1;
+
     if (endDate === 0) {
         result += 1;
     } else {
         result += 2;
     }
+
     days -= 7 - startDate + endDate;
     result += days / 7 * 2;
     return result;
