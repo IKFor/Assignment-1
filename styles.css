@@ -44,3 +44,11 @@ body{
 .button{
     margin: 10px 0;
 }
+
+@media screen and (max-width: 34500px) {
+    .container{
+        max-width: 50px;
+        padding: 15px;
+        background-color: white;
+    }
+}
